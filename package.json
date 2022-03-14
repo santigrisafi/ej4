@@ -1,0 +1,14 @@
+{
+  "name": "ejercicio-4",
+  "version": "1.0.0",
+  "description": "Desarrollo del 4to ejercicio para el curso Codo a codo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Santiago Grisafi",
+  "license": "ISC",
+  "dependencies": {
+    "open-iconic": "^1.1.1"
+  }
+}
