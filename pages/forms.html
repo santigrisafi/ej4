@@ -14,66 +14,68 @@
 
 <body style="background-image: url(../img/fondo2.jpg); background-repeat: no-repeat; background-size: cover;"
     class="text-white">
-    <form autocomplete="off" class="form-group">
-        <div class="container main-container mt-5 bg-dark text-white pb-3">
+    <header>
+        <h2 class="text-center mt-5 mb-5"><span class="oi" data-glyph="folder"></span> Forms</h2>
+    </header>
+    <form autocomplete="off" class="form-group" action="./show-data.html">
+        <div class="container main-container mt-5 text-white pb-3">
             <div class="row">
-                <h4 class="text-center mb-3 mt-3">Nombres y apellido de la persona: </h4>
+                <h4 class="text-center mb-3 mt-3"><span class="oi" data-glyph="clipboard"></span> Nombres y apellido de la persona: </h4>
                 <div class="col text-center">
                     <label for="name">
-                        <h6>Nombre:</h6>
+                        <h6><span class="oi" data-glyph="copywriting"></span> Nombre:</h6>
                     </label>
                     <input type="text" id="name" name="name" required minlength="3" class="form-control"
                         placeholder="Input your name">
                 </div>
                 <div class="col text-center">
                     <label for="secondname">
-                        <h6> Segundo Nombre: </h6>
+                        <h6><span class="oi" data-glyph="copywriting"></span> Segundo Nombre: </h6>
                     </label>
                     <input type="text" id="secondname" name="secondname" required minlength="3" class="form-control"
                         placeholder="Input your second name">
                 </div>
                 <div class="col text-center">
                     <label for="lastname">
-                        <h6>Apellido: </h6>
+                        <h6><span class="oi" data-glyph="copywriting"></span> Apellido: </h6>
                     </label>
                     <input type="text" id="lastname" name="lastname" required minlength="3" class="form-control"
                         placeholder="Input your lastname">
                 </div>
             </div>
             <div class="row">
-                <h4 class="text-center mb-3 mt-3">Detalles de la persona: </h4>
+                <h4 class="text-center mb-3 mt-3"><span class="oi" data-glyph="clipboard"></span> Detalles de la persona: </h4>
                 <div class="col text-center">
-                    <h6>Genero: </h6>
+                    <h6><span class="oi" data-glyph="dashboard"></span> Genero: </h6>
                     <input type="radio" name="gender" id="genre" checked value="Female"> Female
                     <input type="radio" name="gender" id="genre" checked value="Male"> Male
-
                 </div>
                 <div class="col-1 text-center">
                     <label for="age">
-                        <h6> Edad: </h6>
+                        <h6><span class="oi" data-glyph="grid-four-up"></span> Edad: </h6>
                     </label>
                     <input type="number" id="age" name="age" required minlength="3" class="form-control" value="0"
                         min="1" max="120">
                 </div>
                 <div class="col text-center">
                     <label for="email">
-                        <h6>Email: </h6>
+                        <h6><span class="oi" data-glyph="file"></span> Email: </h6>
                     </label>
                     <input type="email" id="email" name="email" required minlength="3" class="form-control"
                         placeholder="Input your email">
                 </div>
                 <div class="row">
-                    <h5 class="text-center mt-5">Telefono:</h5>
+                    <h5 class="text-center mt-5"><span class="oi" data-glyph="fire"></span> Telefono:</h5>
                     <div class="col text-center">
                         <label for="zone">
-                            <h6>Caracteristica: </h6>
+                            <h6> <span class="oi" data-glyph="file"></span>Caracteristica: </h6>
                         </label>
                         <input type="number" id="zone" name="zone" required minlength="3" class="form-control"
                             placeholder="Input your zone of phone">
                     </div>
                     <div class="col text-center">
                         <label for="phone">
-                            <h6>Resto del numero telefonico: </h6>
+                            <h6><span class="oi" data-glyph="file"></span> Resto del numero telefonico: </h6>
                         </label>
                         <input type="number" id="phone" name="phone" required minlength="3" class="form-control"
                             placeholder="Input your rest of phone">
@@ -82,31 +84,38 @@
 
             </div>
             <div class="row text-center">
-                <h4 class="text-center mb-3 mt-5"> Direccion y localidad:</h4>
+                <h4 class="text-center mb-3 mt-5"><span class="oi" data-glyph="clipboard"></span> Direccion y localidad:</h4>
                 <div class="col-3">
                     <label for="street">
-                        <h6>Nombre de la Calle:</h6>
+                        <h6><span class="oi" data-glyph="document"></span> Nombre de la Calle:</h6>
                     </label>
                     <input type="text" class="form-control" placeholder="Input your street name" required name="street"
                         id="street">
                 </div>
                 <div class="col-2 text-center">
                     <label for="streetnumber">
-                        <h6>Numero:</h6>
+                        <h6 class="text-center"><span class="oi" data-glyph="document"></span> Numero:</h6>
                     </label>
                     <input type="number" class="form-control" placeholder="Input your street number" required
                         name="streetnumber" id="streetnumber">
                 </div>
                 <div class="col-3">
                     <label for="city">
-                        <h6>Localidad:</h6>
+                        <h6><span class="oi" data-glyph="document"></span> Localidad:</h6>
                     </label>
                     <input type="text" class="form-control" placeholder="Input your street number" required name="city"
                         id="city">
                 </div>
-                <div class="col">
+                <div class="col-2">
+                    <label for="zip">
+                        <h6><span class="oi" data-glyph="document"></span> Codigo Postal:</h6>
+                    </label>
+                    <input type="text" class="form-control" placeholder="Input your zip code" required name="zip"
+                        id="zip">
+                </div>
+                <div class="col-2">
                     <label for="province">
-                        <h6>Provincia:</h6>
+                        <h6><span class="oi" data-glyph="document"></span>Provincia:</h6>
                     </label>
                     <select id="province" name="province" class="form-control" aria-placeholder="Select your province">
                         <option> Buenos Aires </option>
@@ -136,16 +145,90 @@
                     </select>
                 </div>
             </div>
+            <div class="row">
+                <h4 class="text-center mb-3 mt-5"><span class="oi" data-glyph="hard-drive"></span> Conocimientos Previos:</h4>
+                <div class="col text-center">
+
+                    <h6 class="text-center"><span class="oi" data-glyph="graph"></span> Frameworks Front-end</h6>
+                    <label for="angularjs">Angular.JS</label>
+                    <input type="checkbox" value="Angular" name="angularjs" id="angularjs" class="mr-3">
+                    <label for="angularjs">Angular TS</label>
+                    <input type="checkbox" value="Angular TS" name="angular" id="angular" class="mr-3">
+                    <label for="angularjs">React.JS</label>
+                    <input type="checkbox" value="React.JS" name="react" id="react" class="mr-3">
+                    <label for="angularjs">Vue.JS</label>
+                    <input type="checkbox" value="Vue.JS" name="vue" id="vue" class="mr-3">
+                </div>
+                <div class="col text-center">
+                    <h6 class="text-center"><span class="oi" data-glyph="graph"></span> Frameworks Back-end</h6>
+                    <label for="angularjs">Spring Boot</label>
+                    <input type="checkbox" value="Angular" name="angularjs" id="angularjs">
+                    <label for="angularjs">Django</label>
+                    <input type="checkbox" value="Angular TS" name="angular" id="angular">
+                    <label for="angularjs">ExpressJS</label>
+                    <input type="checkbox" value="React.JS" name="react" id="react">
+                    <label for="angularjs">Koa</label>
+                    <input type="checkbox" value="Vue.JS" name="vue" id="vue">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <h6 class="text-center mt-3 mb-2">Base de datos</h6>
+                    <label for="mysql">MySQL</label>
+                    <input type="checkbox" value="MySQL" name="mysql" id="mysql" class="mr-3">
+                    <label for="mongodb">Mongo DB</label>
+                    <input type="checkbox" value="Mongo DB" name="mongodb" id="mongodb" class="mr-3">
+                    <label for="postgres">PostgresSQL</label>
+                    <input type="checkbox" value="PostgresSQL" name="react" id="postgres" class="mr-3">
+                </div>
+                <div class="col text-center">
+                    <h6 class="text-center mt-3 mb-2">Lenguajes de programacion</h6>
+                    <label for="java">Java</label>
+                    <input type="checkbox" value="Java" name="java" id="java">
+                    <label for="javascript">Javascript</label>
+                    <input type="checkbox" value="Javascript" name="javascript" id="javascript">
+                    <label for="typescript">Typescript</label>
+                    <input type="checkbox" value="Typescript" name="typescript" id="typescript">
+                    <label for="php">Php</label>
+                    <input type="checkbox" value="Php" name="php" id="php">
+                    <label for="c++">C++</label>
+                    <input type="checkbox" value="C++" name="c++" id="c++">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-6 text-center">
+                    <label for="estudios">Nivel alcanzo de estudios: </label>
+                    <select id="estudios" name="estudios" class="form-control">
+                        <option value="primaria">Primaria</option>
+                        <option value="secundaria">Secundaria</option>
+                        <option value="terciario">Terciario</option>
+                        <option value="universitario">Universitario</option>
+                    </select>
+                </div>
+                <div class="col-6 text-center">
+                    <label for="estudios">Nivel alcanzo de estudios: </label>
+                    <input type="text" placeholder="Input your institute" class="form-control" id="school" name="school"
+                        required>
+                </div>
+            </div>
+            <div class="text-center mt-3 mb-3">
+                <label for="comentarios"><span class="oi" data-glyph="aperture"></span> Mas detalles:</label>
+                <div class="col text-center mt-3 mb-3">
+                    <textarea name="comentarios" id="comentarios" required minlength="3" rows="3" cols="100"></textarea>
+                </div>
+            </div>
         </div>
-        <div class="text-center mt-5">
+        <div class="text-center mt-5 mb-3">
             <button type="submit" class="btn btn-success btn-block">
-                Enviar Datos
+                <span class="oi" data-glyph="badge"></span> Enviar Datos
             </button>
             <a href="../index.html" class="btn btn-danger btn-block">
-                Volver a la pagina de Inicio
+                <span class="oi" data-glyph="account-logout"></span> Volver a la pagina de Inicio
             </a>
         </div>
     </form>
+    <p class="text-center alert alert-info mt-3"> Si usted hace click en el boton "Enviar", la informacion sera enviada.</p>
+
 </body>
 
 </html>

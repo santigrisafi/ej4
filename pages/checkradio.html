@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/radio.css" rel="stylesheet" type="text/css">
+    <link href="../node_modules/open-iconic/font/css/open-iconic.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <title> Check y Radio </title>
+</head>
+
+<body style="background-image: url('../img//fondo3.png');background-repeat: no-repeat; background-size: cover;"
+    class="text-white">
+    <header>
+        <h2 class="text-center mt-3 bg-dark"><span class="oi" data-glyph="excerpt"></span> Tareas por hacer y terminos que aceptar </h2>
+    </header>
+    <form autocomplete="off">
+        <div class="container main-container">
+            <div class="row mt-3">
+                <div class="col text-center bg-dark mt-3 mb-3">
+                    <h4 class="text-center bg-dark mt-3 mb-3"><span class="oi" data-glyph="eyedropper"></span> Tareas del soporte IT</h4>
+                    <h5 class="text-center bg-dark">(Checkbox)</h5>
+                    <label for="opcion1">Formatear e instalar Windows</label>
+                    <input type="checkbox" id="opcion1" name="opcion1" value="Formatear e instalar Window">
+                    <br />
+                    <label for="opcion2">Instalar Office y Activar Windows</label>
+                    <input type="checkbox" id="opcion2" name="opcion2" value="Instalar Office y Activar Windows">
+                    <br />
+                    <label for="opcion3">Instalar Programas</label>
+                    <input type="checkbox" id="opcion3" name="opcion3" value="Instalar Programas">
+                    <br />
+                    <label for="opcion3">Hacer copia de seguridad</label>
+                    <input type="checkbox" id="opcion4" name="opcion4" value="Hacer copia de seguridad" class="mb-5">
+                    <br />
+                </div>
+                <div class="col text-center bg-dark mt-3 mb-3">
+                    <h4 class="text-center bg-dark mt-3 mb-3"><span class="oi" data-glyph="fork"></span> Acuerdo de Licencia de Windows 10 </h4>
+                    <h5 class="text-center bg-dark">(Radio)</h5>
+                    <label for="opcion5">Acepto los terminos de licencia de Windows 10 Home 64 bits</label>
+                    <input type="radio" id="opcion5" name="opcion5">
+                    <br />
+                    <label for="opcion6">Acepto los terminos de licencia de Microsoft Office Pro Plus 2016</label>
+                    <input type="radio" id="opcion6" name="opcion6">
+                    <br />
+                    <label for="opcion7">Acepto los terminos de licencia de los software de terceros</label>
+                    <input type="radio" id="opcion7" name="opcion7">
+                    <br />
+                    <label for="opcion8">Acepto los terminos de licencia de Norton Ghost 15.0</label>
+                    <input type="radio" id="opcion8" name="opcion8" class="mb-5">
+                    <br />
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="text-center">
+        <a href="../index.html" class="btn btn-danger btn-block mt-5 mb-2"><span class="oi" data-glyph="action-undo"></span> Volver a la pagina anterior</a>
+    </div>
+</body>
+
+</html>
